@@ -118,9 +118,23 @@ nav a {
     margin-bottom: 5rem;
     padding-top: 4rem;
     padding-bottom: 1rem;
-    display: grid;
 
 }
+
+.grid-parent {
+    display: grid;
+    grid-template-columns: 10% repeat(4, 20%) 10%;
+    grid-template-rows: 10% repeat(4, 20%) 10%;
+    grid-column-gap: 10px;
+    grid-row-gap: 35px;
+    }
+    
+.grid-1 { grid-area: 2 / 2 / 4 / 6; }
+.grid-2 { grid-area: 4 / 2 / 6 / 6; }
+.grid-3 { grid-area: 2 / 2 / 4 / 4; }
+.grid-4 { grid-area: 2 / 4 / 4 / 6; }
+.grid-5 { grid-area: 4 / 2 / 6 / 4; }
+.grid-6 { grid-area: 4 / 4 / 6 / 6; }
 
 .categorias-container {
     width: 100%;
