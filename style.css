@@ -510,9 +510,9 @@ footer nav {
     display: grid;
     row-gap: 1.5rem;
     grid-template-areas: 
-    "congreso-grid-2  congreso-text  congreso-text  congreso-text "
-    "belgrano-text    belgrano-text  belgrano-text  belgrano-grid-2"
-    "caballito-grid-2 caballito-text caballito-text caballito-text";
+    "congreso-grid-2  congreso-text  congreso-text "
+    "belgrano-text   belgrano-text  belgrano-grid-2"
+    "caballito-grid-2 caballito-text caballito-text ";
 }
 
 .congreso-grid-2{
@@ -547,26 +547,22 @@ footer nav {
     align-items: center;
 }
 
-.locales-2 {
-    display: flex;
-    align-items: center;
-    width: 90%;
-    background-color: #4B4453;
-    margin-top: .5rem;
-    margin-bottom: .5srem;
-}
+
 
 .locales-2-text{
     background-color: #4B4453;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.2rem;
+    padding-bottom: 2rem;
 }
 
 .locales-2-text h2{
     font-size: 2rem;
+    padding-bottom: 10vh;
 }
 
-.locales-2-text p{
-    font-size: 1.2rem;
-}
 
 .img-locales-2 {
     width: 100%;
@@ -619,7 +615,7 @@ h1 {
 	padding: 25px 40px;
 }
 
-h2{
+.header-contact{
 display: flex;
 justify-content: center;
 margin-bottom: 3rem;
