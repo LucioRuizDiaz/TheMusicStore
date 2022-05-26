@@ -6,7 +6,15 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
+    <!-- AOS -->
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+
     <title>The Music Store</title>
+        <!-- animate.style -->
+        <link
+        rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+      />
 </head>
 
 <body>
@@ -24,7 +32,7 @@
         <nav class="header-container">
             <ul class="header-ul">
                 <li>
-                    <a href="pages/auriculares.html" class="header-buttons">
+                    <a href="pages/auriculares.html" class="header-buttons" class="animate__animated animate__pulse">
                         Auriculares
                     </a>
                 </li>
@@ -70,7 +78,7 @@
 
         <!-- Categorias -->
 
-        <section class="categorias" id="categorias">
+        <section class="categorias" id="categorias" data-aos="fade-up" data-aos-duration="1500">
 
             <h2 class="categorias-title">
                 Navegá por categorias
@@ -149,7 +157,7 @@
 
 
         <!-- Auriculares Más Vendidos  -->
-        <section class="sale-headphones-container">
+        <section class="sale-headphones-container" data-aos="fade-up" data-aos-duration="1500">
             <h2 class="headphones-title">
                 Auriculares Más Vendidos
             </h2>
@@ -162,20 +170,21 @@
                         alt="carrousel de imagenes." class="headphones">
                 </a>
 
+                
+            <p class="headphones-subtitle">
+                Audio-Technica ATH-M50xBT2
+            </p>
 
 
             </div>
 
-            <p class="headphones-subtitle">
-                Audio-Technica ATH-M50xBT2
-            </p>
         </section>
 
 
 
 
         <!-- Instrumentos Más Vendidos -->
-        <section class="inst-vendidos">
+        <section class="inst-vendidos" data-aos="fade-up" data-aos-duration="1500" >
             <h2>
                 Instrumentos Más Vendidos
             </h2>
@@ -199,7 +208,7 @@
 
 
     <!-- Inicio Locales -->
-    <section  class="locales-container" id="locales">
+    <section  class="locales-container" id="locales" data-aos="fade-up" data-aos-duration="1500">
 
         <!-- <div> -->
             <h2>
@@ -252,7 +261,7 @@
     <!-- Fin Locales -->
 
     <!-- Inicio Marcas -->
-    <section class="marcas" id="marcas">
+    <section class="marcas" id="marcas" data-aos="fade-up" data-aos-duration="1500">
         <div>
             <h2 class="marcas-title">
                 Nuestras Marcas
@@ -366,6 +375,14 @@
         </div>
 
     </footer>
+
+
+    <!-- AOS -->
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
+    <!-- FIN AOS -->
 
 </body>
 
