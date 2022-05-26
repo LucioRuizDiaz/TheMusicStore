@@ -9,8 +9,6 @@
 }
 
 
-
-
 * {
     margin: 0;
     padding: 0;
@@ -112,12 +110,13 @@ nav a {
 /* CATEGORIAS */
 
 .categorias {
-    background-color: #9A99B0;
+    /* background-color: #9A99B0; */
     width: 99%;
     margin-top: 5rem;
     margin-bottom: 5rem;
     padding-top: 4rem;
-    padding-bottom: 10rem;
+    padding-bottom: 5rem;
+    margin-left: 0.4rem;
 
     display: grid;
     gap: 1.5rem;
@@ -145,6 +144,10 @@ nav a {
     grid-area: categorias-grid-4;
 
 }
+
+/* .categorias-grid-1:hover{
+    border: #4B4453 2px solid;
+} */
 
 
 
@@ -189,8 +192,18 @@ nav a {
 
 /* AURICULARES MAS VENDIDOS */
 
+.sale-headphones-container{
+margin-top: 2rem;
+margin-bottom: 5rem;
+padding-top: 1rem;
+padding-bottom: 5rem;
+}
+
+
 .headphones-title {
-    margin-bottom: 10px;
+    margin-bottom: 2rem;
+    font-size: 3rem;
+
 }
 
 .headphones-subtitle {
@@ -205,10 +218,12 @@ nav a {
 
 .sale-headphones-grid {
     width: 100%;
-    /* display: flex;
-    justify-content: center;
-    align-items: center; */
-    /* flex-wrap: wrap; */
+    display: grid;
+    grid-template-areas: 
+    "headphones headphones headphones"
+    "headphones headphones-subtitle headphones"
+    "headphones headphones headphones";
+
 }
 
 .headphones {
@@ -217,12 +232,27 @@ nav a {
     display: flex;
     justify-content: center;
     margin-bottom: 10px;
+    filter: none;
+
+}
+
+.headphones:hover{
+    filter: blur(10px);
 }
 
 
 /* FIN AURICULARES MAS VENDIDOS */
 
 /* INSTRUMENTOS MAS VENDIDOS */
+
+
+.inst-vendidos{
+    margin-top: 2rem;
+    margin-bottom: 5rem;
+    padding-top: 1rem;
+    padding-bottom: 5rem;
+    } 
+
 
 .guitar {
     /* border: blue solid 5px; */
@@ -240,6 +270,13 @@ nav a {
     font-size: large;
 }
 
+.inst-vendidos h2{
+    margin-bottom: 2rem;
+    font-size: 3rem;
+}
+
+
+
 
 /* FIN INSTRUMENTOS MAS VENDIDOS */
 
@@ -250,10 +287,11 @@ nav a {
 
 .locales-container {
     /* width: 98%; */
-    margin-bottom: 20rem;
-    padding-bottom: 10rem;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+    padding-top: 1rem;
+    padding-bottom: 2rem;
     background-color: #9A99B0;
-
     display: grid;
     gap: 1.5rem;
     grid-template-areas: 
@@ -322,7 +360,9 @@ nav a {
     justify-content: center;
     align-items: center;
     width: 100%;
-    margin-bottom: 2rem;
+    margin-top: 10rem;
+    padding-top: 1rem;
+    padding-bottom: 3rem;
 }
 
 .marcas-title {
