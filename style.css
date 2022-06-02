@@ -63,6 +63,7 @@ header {
 
 
 nav a {
+    padding-right: 10px;
     font-size: medium;
 
 }
@@ -430,7 +431,9 @@ footer section {
 }
 
 .footer-nav{
-list-style: none;
+list-style-type: none;
+margin: none;
+padding: none;
 }
 /* FIN FOOTER */
 
