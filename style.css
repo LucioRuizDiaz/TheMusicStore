@@ -93,10 +93,12 @@ nav a {
 
 /* CARROUSEL DE IMAGENES 1 */
 
-.carrousel-1 {
+.presentation{
     width: 100%;
 
 }
+
+
 
 /* FIN CARROUSEL DE IMAGENES 1 */
 
@@ -192,6 +194,15 @@ padding-top: 1rem;
 padding-bottom: 5rem;
 }
 
+@media screen and (max-width: 768px) {
+
+    .sale-headphones-container{
+        display: none;
+    
+    }
+}
+
+
 
 .headphones-title {
     margin-bottom: 2rem;
@@ -246,6 +257,13 @@ padding-bottom: 5rem;
     padding-bottom: 5rem;
     } 
 
+    @media screen and (max-width: 768px) {
+
+        .inst-vendidos{
+            display: none;
+        
+        }
+    }
 
 .guitar {
     /* border: blue solid 5px; */
@@ -291,6 +309,19 @@ padding-bottom: 5rem;
     ".  locales-header . "
     "congreso belgrano caballito";
 
+}
+
+@media screen and (max-width: 768px) {
+
+    .locales-container {
+
+        grid-template-areas: 
+        "locales-header"
+        "congreso"
+        "belgrano"
+        "caballito";
+    
+    }
 }
 
 .locales-container h2 {
@@ -450,6 +481,7 @@ footer section {
     display: flex;
     flex-direction: column;
     align-items: flex-end;
+    grid-area: social;
 }
 
 .footer-info {
@@ -457,6 +489,7 @@ footer section {
     display: flex;
     flex-direction: column;
     align-items: flex-end;
+    grid-area: info;
 }
 
 .footer-nav{
@@ -464,6 +497,71 @@ list-style-type: none;
 margin: none;
 padding: none;
 }
+
+.fb{
+
+    grid-area: facebook;
+}
+.tw{
+    grid-area: twitter;
+}
+.ig{
+    grid-area: instagram;
+}
+.wpp{
+    grid-area: whatsapp;
+}
+.footer-email{
+    grid-area: footer-email;
+}
+.footer-loc{
+grid-area: location;
+}
+
+/* MEDIA FOOTER */
+
+@media screen and (max-width: 768px) {
+
+footer nav{
+    display: none;
+
+}
+
+
+
+.footer-social{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    display: grid;
+    gap: 1.5rem;
+    grid-template-areas: 
+    "facebook instagram twitter whatsapp";
+}
+
+.footer-info{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    display: grid;
+    grid-template-areas:  
+    "footer-email footer-email footer-email footer-email"
+    "location location location location";
+}
+
+.footer-responsive{
+    width: 100%;
+    /* display: grid;
+    grid-template-areas:  
+    "facebook instagram twitter whatsapp"
+    "footer-email footer-email footer-email footer-email"
+    "location location location location"; */
+}
+
+}
+/* FIN MEDIA FOOTER */
+
+
 /* FIN FOOTER */
 
 
@@ -476,6 +574,7 @@ padding: none;
 .container h2 {
     margin-top: 3rem;
     margin-bottom: 2rem;
+    grid-area: products-title;
 }
 
 .images {
@@ -491,6 +590,7 @@ padding: none;
     align-items: center;
     width: 23%;
     border: #B0A8B9 solid 3px;
+    grid-area: item-1;
 }
 
 .img-1 {
@@ -505,6 +605,7 @@ padding: none;
     align-items: center;
     width: 23%;
     border: #B0A8B9 solid 3px;
+    grid-area: item-2;
 }
 
 .img-2 {
@@ -519,6 +620,7 @@ padding: none;
     align-items: center;
     width: 23%;
     border: #B0A8B9 solid 3px;
+    grid-area: item-3;
 }
 
 .img-3 {
@@ -533,6 +635,7 @@ padding: none;
     align-items: center;
     width: 23%;
     border: #B0A8B9 solid 3px;
+    grid-area: item-4;
 }
 
 .img-4 {
@@ -554,7 +657,37 @@ padding: none;
 .price {
     color: #4B4453;
 }
+@media screen and (max-width: 768px) {
 
+    /* .container{
+        display: grid;
+        grid-template-areas:
+        "products-title products-title"  
+        "item-1 item-2"
+        "item-3 item-4";
+    } */
+    
+    .images{
+        display: grid;
+        grid-template-areas: 
+        "item-1 item-2"
+        "item-3 item-4";
+    }
+
+    .item-1{
+        width: 100%;
+    }
+    .item-2{
+        width: 100%;
+    }
+    .item-3{
+        width: 100%;
+    }
+    .item-4{
+        width: 100%;
+    }
+    
+}
 /* FIN PRODUCTOS */
 
 /* dondeEncontrarnos.html */
