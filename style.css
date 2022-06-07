@@ -288,8 +288,8 @@ padding-bottom: 5rem;
     display: grid;
     gap: 1.5rem;
     grid-template-areas: 
-    ".  . locales-header . . "
-    "congreso . belgrano . caballito";
+    ".  locales-header . "
+    "congreso belgrano caballito";
 
 }
 
@@ -356,14 +356,36 @@ padding-bottom: 5rem;
     margin-top: 10rem;
     padding-top: 1rem;
     padding-bottom: 3rem;
+    display: grid;
+    grid-template-areas: 
+    "marcas-title marcas-title marcas-title marcas-title"
+    "akai focusrite sennheiser shure"
+    "marcas-text marcas-text marcas-text marcas-text";
 }
 
 .marcas-title {
 
     /* border: green solid 5px; */
     margin-bottom: 1rem;
+    grid-area: marcas-title;
 
 }
+.akai{
+    grid-area: akai;
+}
+
+.focusrite{
+    grid-area: focusrite;
+}
+
+.sennheiser{
+    grid-area: sennheiser;
+}
+
+.shure{
+    grid-area: shure;
+}
+
 
 .img-marcas-container {
     /* border: yellow solid 5px; */
@@ -374,7 +396,7 @@ padding-bottom: 5rem;
 }
 
 .img-marcas {
-    width: 10%;
+    width: 20%;
     margin: 1rem 0;
     /* height: 10rem; */
 }
@@ -383,6 +405,7 @@ padding-bottom: 5rem;
     display: flex;
     justify-content: center;
     font-size: 1.5rem;
+    grid-area: marcas-text;
     /* border: blue solid 5px; */
 
 }
