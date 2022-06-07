@@ -17,64 +17,42 @@
 <body>
     <!-- Inicio Header -->
     <header>
-        <!-- Logo -->
-        <div class="container-img-header">
-            <a href="../index.html">
-                <img src="../multimedia/images/Guitar_Center_logo.svg.png" alt="Logo de la compañia" class="img-header">
+        <nav class="navbar fixed-top navbar-expand-lg" style="background-color: #845EC2;">
+          <div class="container-fluid">
+              <!-- LOGO -->
+            <a class="navbar-brand" href="../index.html">
+              <img src="../multimedia/images/Guitar_Center_logo.svg.png" alt="Logo de la compañia" class="img-header">
             </a>
-        </div>
 
+            <!-- FIN LOGO -->
 
-        <!-- nav bar -->
-        <!-- <nav class="header-container">
-            <ul class="header-ul">
-                <li>
-                    <a href="auriculares.html" class="header-buttons">
-                        Auriculares
-                    </a>
-                </li>
-                <li>
-                    <a href="instrumentos.html" class="header-buttons">
-                        Instrumentos
-                    </a>
-                </li>
-                <li>
-                    <a href="audio.html" class="header-buttons">
-                        Audio
-                    </a>
-                </li>
-                <li>
-                    <a href="dondeEncontranos.html" class="header-buttons">
-                        ¿Donde Encontrarnos?
-                    </a>
-                </li>
-                <li>
-                    <a href="contacto.html" class="header-buttons">
-                        Contacto
-                    </a>
-                </li>
-            </ul>
-        </nav> -->
-        <nav class="navbar navbar-expand-lg ">
-            <div class="container-fluid">
-
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
-                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
-                    aria-expanded="false" aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
-                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
+              <div class="offcanvas-body" style="background-color: #845EC2;">
+                <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+                  <li class="nav-item">
                     <a class="header-buttons" href="auriculares.html">Auriculares</a>
-
+                  </li>
+                  <li>
                     <a class="header-buttons" href="instrumentos.html">Instrumentos</a>
+                  </li>
+                  <li>
                     <a class="header-buttons" href="audio.html">Audio</a>
+                  </li>                
+                  <li>
                     <a class="header-buttons" href="dondeEncontranos.html">¿Donde Encontrarnos?</a>
-                    <a class="header-buttons" href="contacto.html">Contacto</a>
-
-                </div>
+                  </li>                
+                  <li>
+                  <a class="header-buttons" href="contacto.html">Contacto</a>
+                  </li>
+                </ul>
+              </div>
             </div>
+          </div>
         </nav>
-    </header>
+  </header>
 
     <!-- Fin Header -->
 
