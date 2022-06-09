@@ -1,0 +1,84 @@
+@import "../base/colors";
+
+
+.locales {
+    background-color: $bg-products;
+    width: 100%;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+
+}
+
+
+.locales-grid{
+    display: grid;
+    row-gap: 1.5rem;
+    grid-template-areas: 
+    "congreso-grid-2  congreso-text  congreso-text "
+    "belgrano-text   belgrano-text  belgrano-grid-2"
+    "caballito-grid-2 caballito-text caballito-text ";
+}
+
+.congreso-grid-2{
+    grid-area: congreso-grid-2;
+}
+.belgrano-grid-2{
+    grid-area: belgrano-grid-2;
+}
+.caballito-grid-2{
+    grid-area: caballito-grid-2;
+}
+.congreso-text{
+    grid-area: congreso-text;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.belgrano-text{
+    grid-area: belgrano-text;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.caballito-text{
+    grid-area: caballito-text;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.locales-2-text{
+    background-color: #4B4453;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.2rem;
+    padding-bottom: 2rem;
+
+    h2{
+        font-size: 2rem;
+        padding-bottom: 10vh;
+    }
+}
+
+.img-locales-2 {
+    width: 100%;
+    height: 100%;
+}
+
+h1 {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    font-size: 3rem;
+    font-family: merriweather-header;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+
+}
+
+

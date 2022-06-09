@@ -1,0 +1,96 @@
+.sale-headphones-container{
+    margin-top: 2rem;
+    margin-bottom: 5rem;
+    padding-top: 1rem;
+    padding-bottom: 5rem;
+    }
+    
+    @media screen and (max-width: 768px) {
+    
+        .sale-headphones-container{
+            display: none;
+        
+        }
+    }
+    
+    
+    
+    .headphones-title {
+        margin-bottom: 2rem;
+        font-size: 3rem;
+    
+    }
+    
+    .headphones-subtitle {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-bottom: 50px;
+        font-weight: 600;
+        font-size: large;
+    }
+    
+    .sale-headphones-grid {
+        width: 100%;
+        display: grid;
+        grid-template-areas: 
+        "headphones headphones headphones"
+        "headphones headphones-subtitle headphones"
+        "headphones headphones headphones";
+    
+    }
+    
+    .headphones {
+        width: 100%;
+        /* height: 400px;     */
+        display: flex;
+        justify-content: center;
+        margin-bottom: 10px;
+        filter: none;
+
+        &:hover{
+            filter: blur(10px);
+
+        }
+    
+    }
+    
+
+    .inst-vendidos{
+        margin-top: 2rem;
+        margin-bottom: 5rem;
+        padding-top: 1rem;
+        padding-bottom: 5rem;
+
+        p{
+            display: flex;
+            justify-content: center;
+            margin-bottom: 50px;
+            font-weight: 600;
+            font-size: large;
+        }
+        h2{
+            margin-bottom: 2rem;
+            font-size: 3rem;
+        }
+
+        } 
+    
+        @media screen and (max-width: 768px) {
+    
+            .inst-vendidos{
+                display: none;
+            
+            }
+        }
+    
+    .guitar {
+        width: 100%;
+        margin-bottom: 1rem;
+    }
+    
+
+    
+
+    

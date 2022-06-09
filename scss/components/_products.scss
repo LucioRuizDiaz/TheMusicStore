@@ -1,0 +1,114 @@
+@import "../base/colors";
+
+
+.container{
+    margin-bottom: 5rem;
+
+    h2{
+        margin-top: 3rem;
+        margin-bottom: 2rem;
+        grid-area: products-title;
+    }
+}
+
+.images{
+    display: flex;
+    justify-content: center;
+}
+
+.img-1{
+    width: 100%;
+}
+.img-2{
+    width: 100%;
+}
+.img-3{
+    width: 100%;
+}
+.img-4{
+    width: 100%;
+}
+
+.item-1 {
+    background-color: $bg-products;
+    flex-direction: column;
+    justify-content: center;
+    display: flex;
+    align-items: center;
+    width: 23%;
+    border: $border-products solid 3px;
+    grid-area: item-1;
+}
+
+.item-2{
+    background-color: $bg-products;
+    flex-direction: column;
+    justify-content: center;
+    display: flex;
+    align-items: center;
+    width: 23%;
+    border: $border-products solid 3px;
+    grid-area: item-2;
+}
+
+.item-3{
+    background-color: $bg-products;
+    flex-direction: column;
+    justify-content: center;
+    display: flex;
+    align-items: center;
+    width: 23%;
+    border: $border-products solid 3px;
+    grid-area: item-3;
+}
+
+.item-4{
+    background-color: $bg-products;
+    flex-direction: column;
+    justify-content: center;
+    display: flex;
+    align-items: center;
+    width: 23%;
+    border: $border-products solid 3px;
+    grid-area: item-4;
+}
+
+.text{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    background-color: #ccbbcf;
+}
+
+.price{
+    color: #4B4453;
+}
+
+@media screen and (max-width: 768px) {
+
+
+    
+    .images{
+        display: grid;
+        grid-template-areas: 
+        "item-1 item-2"
+        "item-3 item-4";
+    }
+
+    .item-1{
+        width: 100%;
+    }
+    .item-2{
+        width: 100%;
+    }
+    .item-3{
+        width: 100%;
+    }
+    .item-4{
+        width: 100%;
+    }
+    
+}
