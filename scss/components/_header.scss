@@ -1,0 +1,24 @@
+header{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 80px;
+}
+
+nav{
+    a{
+        padding-right: 10px;
+        font-size: medium;
+    }
+}
+
+.container-img-header {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+
+}
+
+.img-header {
+    height: 80px;
+}

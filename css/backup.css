@@ -52,10 +52,6 @@ a:hover {
     color: #B4A7B7;
 }
 
-section h2 {
-    display: flex;
-    justify-content: center;
-}
 
 /* HEADER */
 
@@ -63,12 +59,9 @@ header {
     display: flex;
     justify-content: space-between;
     align-items: center;
-
     height: 100px;
 
 }
-
-
 
 nav a {
     padding-right: 10px;
@@ -93,16 +86,14 @@ nav a {
 
 /* FIN HEADER */
 
-/* CARROUSEL DE IMAGENES 1 */
+/* IMAGEN DE PRESENTACION */
 
 .presentation{
     width: 100%;
 
 }
 
-
-
-/* FIN CARROUSEL DE IMAGENES 1 */
+/* FIN IMAGEN DE PRESENTACION */
 
 /* CATEGORIAS */
 
@@ -561,11 +552,7 @@ footer nav{
 
 .footer-responsive{
     width: 100%;
-    /* display: grid;
-    grid-template-areas:  
-    "facebook instagram twitter whatsapp"
-    "footer-email footer-email footer-email footer-email"
-    "location location location location"; */
+
 }
 
 }

@@ -1,0 +1,60 @@
+
+.container-contacto{
+    margin-top: 5vh;
+    margin-bottom: 5vh;
+	width: 100%;
+	height: 100%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+
+.contact-box{
+	max-width: 850px;
+    display: flex;
+	justify-content: center;
+	align-items: center;
+	text-align: center;
+	background-color: #FBEAFF;
+}
+
+
+
+.mensaje{
+	padding: 25px 40px;
+}
+
+.header-contact{
+display: flex;
+justify-content: center;
+margin-bottom: 3rem;
+}
+
+
+
+.field{
+	width: 100%;
+	border: 2px solid #00000000;
+	background-color: #ccbbcf;
+	padding: 0.5rem 1rem;
+	font-size: 1.1rem;
+	margin-bottom: 25px;
+}
+
+
+
+textarea{
+	min-height: 150px;
+}
+
+.boton{
+	width: 40%;
+    height: 10vh;
+	background-color: #B0A8B9;
+	color: #fff;
+	font-size: 1.1rem;
+    border: none;
+
+}
+

@@ -1,0 +1,99 @@
+@import "../base/colors";
+
+
+.container{
+    margin-bottom: 5rem;
+
+    h2{
+        margin-top: 3rem;
+        margin-bottom: 2rem;
+        grid-area: products-title;
+    }
+}
+.item-1 {
+    @extend %items;
+    height: 280px;
+    grid-area: item-1;
+}
+
+.item-2{
+    @extend %items;
+    height: 280px;
+    grid-area: item-2;
+}
+
+.item-3{
+    @extend %items;
+    height: 280px;
+    grid-area: item-3;
+}
+
+.item-4{
+    @extend %items;
+    height: 280px;
+    grid-area: item-4;
+}
+
+.images{
+    display: flex;
+    justify-content: center;
+}
+
+.img-1{
+    @extend %width100;
+    height: 130px;
+}
+.img-2{
+    @extend %width100;
+    height: 130px;
+}
+.img-3{
+    @extend %width100;
+    height: 130px;
+}
+.img-4{
+    @extend %width100;
+    height: 130px;
+}
+
+
+
+.text{
+    @extend %width100;
+    height: 150px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    background-color: #ccbbcf;
+}
+
+.price{
+    color: #4B4453;
+}
+
+@media screen and (max-width: 768px) {
+
+
+    
+    .images{
+        display: grid;
+        grid-template-areas: 
+        "item-1 item-2"
+        "item-3 item-4";
+    }
+
+    .item-1{
+        width: 100%;
+    }
+    .item-2{
+        width: 100%;
+    }
+    .item-3{
+        width: 100%;
+    }
+    .item-4{
+        width: 100%;
+    }
+    
+}
