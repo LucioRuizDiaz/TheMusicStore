@@ -1,0 +1,12 @@
+%width100{
+    width: 100%;
+}
+%items{
+    background-color: $bg-products;
+    flex-direction: column;
+    justify-content: center;
+    display: flex;
+    align-items: center;
+    width: 23%;
+    border: $border-products solid 3px;
+}
