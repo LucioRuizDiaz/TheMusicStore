@@ -12,25 +12,21 @@
 }
 .item-1 {
     @extend %items;
-    height: 280px;
     grid-area: item-1;
 }
 
 .item-2{
     @extend %items;
-    height: 280px;
     grid-area: item-2;
 }
 
 .item-3{
     @extend %items;
-    height: 280px;
     grid-area: item-3;
 }
 
 .item-4{
     @extend %items;
-    height: 280px;
     grid-area: item-4;
 }
 
@@ -40,27 +36,23 @@
 }
 
 .img-1{
-    @extend %width100;
-    height: 130px;
+    @extend %products;
 }
 .img-2{
-    @extend %width100;
-    height: 130px;
+    @extend %products;
 }
 .img-3{
-    @extend %width100;
-    height: 130px;
+    @extend %products;
 }
 .img-4{
-    @extend %width100;
-    height: 130px;
+    @extend %products;
 }
 
 
 
 .text{
-    @extend %width100;
-    height: 150px;
+    width: 100%;
+    height: 40%;
     display: flex;
     flex-direction: column;
     justify-content: flex-start;

@@ -1,3 +1,6 @@
+@import "../base/extends";
+
+
 .presentation{
     width: 100%;
 }
@@ -39,17 +42,21 @@
 }
 
 .categorias-grid-1{
+    @extend %categorias;
     grid-area: categorias-grid-1;
 }
 .categorias-grid-2{
+    @extend %categorias;
     grid-area: categorias-grid-2;
 
 }
 .categorias-grid-3{
+    @extend %categorias;
     grid-area: categorias-grid-3;
 
 }
 .categorias-grid-4{
+    @extend %categorias;
     grid-area: categorias-grid-4;
 
 }

@@ -1,6 +1,4 @@
-%width100{
-    width: 100%;
-}
+
 %items{
     background-color: $bg-products;
     flex-direction: column;
@@ -8,5 +6,21 @@
     display: flex;
     align-items: center;
     width: 23%;
+    height: 350px;
     border: $border-products solid 3px;
+    border-radius: 10px;
+}
+%products{
+    width: 100%;
+    height: 60%;
+}
+%categorias{
+    background-color: $bg-products;
+    flex-direction: column;
+    justify-content: center;
+    display: flex;
+    align-items: center;
+    width: 47%;
+    border: $border-products solid 3px;
+    border-radius: 10px;
 }
