@@ -299,6 +299,9 @@ nav a {
   .locales-container {
     grid-template-areas: ". locales-header ." ". congreso ." ". belgrano ." ". caballito .";
   }
+  .img-locales {
+    width: 100%;
+  }
 }
 .marcas {
   display: flex;
