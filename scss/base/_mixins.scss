@@ -1,0 +1,17 @@
+@mixin price($color, $decoration) {
+    color: $color;
+    text-decoration: $decoration;
+
+}
+
+@mixin locales($area) {
+    width: 100%;
+    background-color: $border-products;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border: $border-products solid 3px;
+    border-radius: 10px;
+    grid-area: $area;
+}

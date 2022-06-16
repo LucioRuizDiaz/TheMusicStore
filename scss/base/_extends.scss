@@ -6,21 +6,40 @@
     display: flex;
     align-items: center;
     width: 23%;
-    height: 350px;
+    height: 60vh;
     border: $border-products solid 3px;
     border-radius: 10px;
 }
+
 %products{
     width: 100%;
     height: 60%;
 }
+
 %categorias{
     background-color: $bg-products;
+    display: flex;
     flex-direction: column;
     justify-content: center;
-    display: flex;
     align-items: center;
-    width: 47%;
     border: $border-products solid 3px;
     border-radius: 10px;
+    height: 75vh;
+    width: 100%;
+
+    p{
+        font-size: 1.5rem;
+        font-weight: 600;
+    }
+}
+
+%text{
+    width: 100%;
+    height: 40%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    background-color: #ccbbcf;
+    border-radius: 0 0 10px 10px;
 }

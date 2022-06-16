@@ -13,7 +13,7 @@
   display: flex;
   align-items: center;
   width: 23%;
-  height: 350px;
+  height: 60vh;
   border: #B0A8B9 solid 3px;
   border-radius: 10px;
 }
@@ -21,6 +21,33 @@
 .img-4, .img-3, .img-2, .img-1 {
   width: 100%;
   height: 60%;
+}
+
+.categorias-4, .categorias-3, .categorias-2, .categorias-1 {
+  background-color: #FBEAFF;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border: #B0A8B9 solid 3px;
+  border-radius: 10px;
+  height: 75vh;
+  width: 100%;
+}
+.categorias-4 p, .categorias-3 p, .categorias-2 p, .categorias-1 p {
+  font-size: 1.5rem;
+  font-weight: 600;
+}
+
+.text {
+  width: 100%;
+  height: 40%;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  background-color: #ccbbcf;
+  border-radius: 0 0 10px 10px;
 }
 
 * {
@@ -88,9 +115,7 @@ nav a {
 
 .categorias {
   width: 99%;
-  margin-top: 5rem;
   margin-bottom: 5rem;
-  padding-top: 4rem;
   padding-bottom: 5rem;
   margin-left: 0.4rem;
   display: grid;
@@ -107,134 +132,107 @@ nav a {
     grid-template-areas: "categorias-title" "categorias-grid-1" "categorias-grid-2" "categorias-grid-3" "categorias-grid-4";
   }
 }
-.categorias-grid-1 {
-  background-color: #FBEAFF;
-  height: 80%;
+.categorias-1 {
   grid-area: categorias-grid-1;
 }
 
-.categorias-grid-2 {
-  background-color: #FBEAFF;
-  height: 80%;
+.categorias-2 {
   grid-area: categorias-grid-2;
 }
 
-.categorias-grid-3 {
-  background-color: #FBEAFF;
-  height: 80%;
+.categorias-3 {
   grid-area: categorias-grid-3;
 }
 
-.categorias-grid-4 {
-  background-color: #FBEAFF;
-  height: 80%;
+.categorias-4 {
   grid-area: categorias-grid-4;
-}
-
-.categorias-1 {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  border: #B0A8B9 solid 3px;
-  max-height: 335px;
-}
-.categorias-1 p {
-  font-size: 1.5rem;
-  font-weight: 600;
 }
 
 .categorias-text {
   display: flex;
   justify-content: center;
+  align-items: center;
   width: 100%;
-  height: 20%;
+  height: 20vh;
   background-color: #ccbbcf;
+  border-radius: 0 0 10px 10px;
 }
 
 .img-categorias {
   width: 100%;
-  height: 100%;
+  height: 55vh;
 }
 
 .categorias-title {
   font-size: 3rem;
   grid-area: categorias-title;
+  margin-top: 5rem;
+  padding-top: 4rem;
 }
 
-.sale-headphones-container {
-  margin-top: 2rem;
-  margin-bottom: 5rem;
-  padding-top: 1rem;
-  padding-bottom: 5rem;
+.sales {
+  margin-bottom: 10rem;
 }
-
-@media screen and (max-width: 768px) {
-  .sale-headphones-container {
-    display: none;
-  }
-}
-.headphones-title {
-  margin-bottom: 2rem;
+.sales h2 {
   font-size: 3rem;
+  margin-top: 3rem;
+  margin-bottom: 2rem;
+  grid-area: products-title;
 }
 
-.headphones-subtitle {
-  width: 100%;
+.item-1 {
+  grid-area: item-1;
+}
+
+.item-2 {
+  grid-area: item-2;
+}
+
+.item-3 {
+  grid-area: item-3;
+}
+
+.item-4 {
+  grid-area: item-4;
+}
+
+.images {
   display: flex;
   justify-content: center;
-  align-items: center;
-  margin-bottom: 50px;
-  font-weight: 600;
+}
+
+.price-1 {
+  color: #4B4453;
+  text-decoration: line-through;
+}
+
+.price-2 {
+  color: #623892;
+  text-decoration: none;
   font-size: large;
 }
 
-.sale-headphones-grid {
-  width: 100%;
-  display: grid;
-  grid-template-areas: "headphones headphones headphones" "headphones headphones-subtitle headphones" "headphones headphones headphones";
-}
-
-.headphones {
-  width: 100%;
-  /* height: 400px;     */
-  display: flex;
-  justify-content: center;
-  margin-bottom: 10px;
-  filter: none;
-}
-.headphones:hover {
-  filter: blur(10px);
-}
-
-.inst-vendidos {
-  margin-top: 2rem;
-  margin-bottom: 5rem;
-  padding-top: 1rem;
-  padding-bottom: 5rem;
-}
-.inst-vendidos p {
-  display: flex;
-  justify-content: center;
-  margin-bottom: 50px;
-  font-weight: 600;
-  font-size: large;
-}
-.inst-vendidos h2 {
-  margin-bottom: 2rem;
-  font-size: 3rem;
-}
-
-@media screen and (max-width: 768px) {
-  .inst-vendidos {
-    display: none;
+@media screen and (max-width: 995px) {
+  .images {
+    display: grid;
+    grid-template-areas: "item-1 item-2" "item-3 item-4";
+  }
+  .item-1 {
+    width: 100%;
+  }
+  .item-2 {
+    width: 100%;
+  }
+  .item-3 {
+    width: 100%;
+  }
+  .item-4 {
+    width: 100%;
+  }
+  .text {
+    font-size: xx-small;
   }
 }
-.guitar {
-  width: 100%;
-  margin-bottom: 1rem;
-}
-
 .locales-container {
   margin-top: 2rem;
   margin-bottom: 2rem;
@@ -243,7 +241,7 @@ nav a {
   background-color: #9A99B0;
   display: grid;
   gap: 1.5rem;
-  grid-template-areas: ".  locales-header . " "congreso belgrano caballito";
+  grid-template-areas: ". . locales-header . . " ". congreso belgrano caballito .";
 }
 .locales-container h2 {
   margin-top: 30px;
@@ -256,37 +254,52 @@ nav a {
 }
 
 .img-locales {
-  width: 100%;
+  width: 60vh;
   height: 50vh;
+  border-radius: 5px;
 }
 
 .congreso {
   width: 100%;
+  background-color: #B0A8B9;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
+  border: #B0A8B9 solid 3px;
+  border-radius: 10px;
   grid-area: congreso;
 }
 
 .belgrano {
   width: 100%;
+  background-color: #B0A8B9;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
+  border: #B0A8B9 solid 3px;
+  border-radius: 10px;
   grid-area: belgrano;
 }
 
 .caballito {
   width: 100%;
+  background-color: #B0A8B9;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
+  border: #B0A8B9 solid 3px;
+  border-radius: 10px;
   grid-area: caballito;
 }
 
+@media screen and (max-width: 768px) {
+  .locales-container {
+    grid-template-areas: ". locales-header ." ". congreso ." ". belgrano ." ". caballito .";
+  }
+}
 .marcas {
   display: flex;
   justify-content: center;
@@ -369,21 +382,11 @@ nav a {
   justify-content: center;
 }
 
-.text {
-  width: 100%;
-  height: 40%;
-  display: flex;
-  flex-direction: column;
-  justify-content: flex-start;
-  align-items: flex-start;
-  background-color: #ccbbcf;
-}
-
 .price {
   color: #4B4453;
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 995px) {
   .images {
     display: grid;
     grid-template-areas: "item-1 item-2" "item-3 item-4";
@@ -411,7 +414,7 @@ nav a {
 .locales-grid {
   display: grid;
   row-gap: 1.5rem;
-  grid-template-areas: "congreso-grid-2  congreso-text  congreso-text " "belgrano-text   belgrano-text  belgrano-grid-2" "caballito-grid-2 caballito-text caballito-text ";
+  grid-template-areas: " . congreso-grid-2  congreso-text  congreso-text . " " . belgrano-text   belgrano-text  belgrano-grid-2 . " " . caballito-grid-2 caballito-text caballito-text . ";
 }
 
 .congreso-grid-2 {

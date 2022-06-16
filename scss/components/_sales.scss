@@ -1,96 +1,95 @@
-.sale-headphones-container{
-    margin-top: 2rem;
-    margin-bottom: 5rem;
-    padding-top: 1rem;
-    padding-bottom: 5rem;
-    }
-    
-    @media screen and (max-width: 768px) {
-    
-        .sale-headphones-container{
-            display: none;
-        
-        }
-    }
-    
-    
-    
-    .headphones-title {
-        margin-bottom: 2rem;
+.sales{
+    margin-bottom: 10rem;
+
+    h2{
         font-size: 3rem;
-    
+        margin-top: 3rem;
+        margin-bottom: 2rem;
+        grid-area: products-title;
+
     }
+}
+.item-1 {
+    @extend %items;
+    grid-area: item-1;
+}
+
+.item-2{
+    @extend %items;
+    grid-area: item-2;
+}
+
+.item-3{
+    @extend %items;
+    grid-area: item-3;
+}
+
+.item-4{
+    @extend %items;
+    grid-area: item-4;
+}
+
+.images{
+    display: flex;
+    justify-content: center;
+}
+
+.img-1{
+    @extend %products;
+}
+.img-2{
+    @extend %products;
+}
+.img-3{
+    @extend %products;
+}
+.img-4{
+    @extend %products;
     
-    .headphones-subtitle {
-        width: 100%;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        margin-bottom: 50px;
-        font-weight: 600;
-        font-size: large;
-    }
+}
+
+
+
+
+.text{
+@extend %text;
+}
+
+.price-1{
+    @include price(#4B4453, line-through);
+
+}
+
+.price-2{
+    @include price(#623892, none);
+    font-size: large;
+}
+
+@media screen and (max-width: 995px) {
+
+
     
-    .sale-headphones-grid {
-        width: 100%;
+    .images{
         display: grid;
         grid-template-areas: 
-        "headphones headphones headphones"
-        "headphones headphones-subtitle headphones"
-        "headphones headphones headphones";
-    
+        "item-1 item-2"
+        "item-3 item-4";
     }
-    
-    .headphones {
+
+    .item-1{
         width: 100%;
-        /* height: 400px;     */
-        display: flex;
-        justify-content: center;
-        margin-bottom: 10px;
-        filter: none;
-
-        &:hover{
-            filter: blur(10px);
-
-        }
-    
     }
-    
-
-    .inst-vendidos{
-        margin-top: 2rem;
-        margin-bottom: 5rem;
-        padding-top: 1rem;
-        padding-bottom: 5rem;
-
-        p{
-            display: flex;
-            justify-content: center;
-            margin-bottom: 50px;
-            font-weight: 600;
-            font-size: large;
-        }
-        h2{
-            margin-bottom: 2rem;
-            font-size: 3rem;
-        }
-
-        } 
-    
-        @media screen and (max-width: 768px) {
-    
-            .inst-vendidos{
-                display: none;
-            
-            }
-        }
-    
-    .guitar {
+    .item-2{
         width: 100%;
-        margin-bottom: 1rem;
+    }
+    .item-3{
+        width: 100%;
+    }
+    .item-4{
+        width: 100%;
     }
     
-
-    
-
-    
+    .text{
+        font-size: xx-small;
+    }
+}

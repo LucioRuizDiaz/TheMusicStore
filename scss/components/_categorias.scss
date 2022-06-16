@@ -4,9 +4,7 @@
 
 .categorias {
     width: 99%;
-    margin-top: 5rem;
     margin-bottom: 5rem;
-    padding-top: 4rem;
     padding-bottom: 5rem;
     margin-left: 0.4rem;
 
@@ -37,59 +35,55 @@
     }
 }
 
-.categorias-grid-1{
-    background-color: $bg-products;
-    height: 80%;
-    grid-area: categorias-grid-1;
-}
-.categorias-grid-2{
-    background-color: $bg-products;
-    height: 80%;
-    grid-area: categorias-grid-2;
 
-}
-.categorias-grid-3{
-    background-color: $bg-products;
-    height: 80%;
-    grid-area: categorias-grid-3;
-
-}
-.categorias-grid-4{
-    background-color: $bg-products;
-    height: 80%;
-    grid-area: categorias-grid-4;
-
-}
 
 .categorias-1 {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    border: $border-products solid 3px;
-    max-height: 335px;
+    @extend %categorias;
+    grid-area: categorias-grid-1;
 
-    p{
-        font-size: 1.5rem;
-        font-weight: 600;
-    }
+
 }
+.categorias-2 {
+    @extend %categorias;
+    grid-area: categorias-grid-2;
+
+
+}
+.categorias-3 {
+    @extend %categorias;
+    grid-area: categorias-grid-3;
+
+
+}
+.categorias-4 {
+    @extend %categorias;
+    grid-area: categorias-grid-4;
+
+
+}
+
+
 
 .categorias-text{
     display: flex;
     justify-content: center;
+    align-items: center;
     width: 100%;
-    height: 20%;
+    height: 20vh;
     background-color: #ccbbcf;
+    border-radius: 0 0 10px 10px;
 
 }
 .img-categorias{
     width: 100%;
-    height: 100%;
+    height: 55vh;
 }
 
 .categorias-title {
     font-size: 3rem;
     grid-area: categorias-title;
+    margin-top: 5rem;
+    padding-top: 4rem;
+
 
 }

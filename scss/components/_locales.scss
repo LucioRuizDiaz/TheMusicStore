@@ -6,52 +6,52 @@
     background-color: #9A99B0;
     display: grid;
     gap: 1.5rem;
-    grid-template-areas: 
-    ".  locales-header . "
-    "congreso belgrano caballito";
+    grid-template-areas:
+        ". . locales-header . . "
+        ". congreso belgrano caballito .";
 
-    h2{
+    h2 {
         margin-top: 30px;
         margin-bottom: 10px;
         grid-area: locales-header;
         font-size: 3rem;
     }
 
-    p{
+    p {
         font-size: 2rem;
     }
 
 }
 
 .img-locales {
-    width: 100%;
+    width: 60vh;
     height: 50vh;
+    border-radius: 5px;
 }
 
 
 .congreso {
-    width: 100%;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    grid-area: congreso;
+    @include locales(congreso)
 }
 
 .belgrano {
-    width: 100%;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    grid-area: belgrano;
+    @include locales(belgrano)
 }
 
 .caballito {
-    width: 100%;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    grid-area: caballito;
+    @include locales(caballito)
+}
+
+@media screen and (max-width: 768px) {
+
+    .locales-container {
+
+        grid-template-areas:
+            ". locales-header ."
+            ". congreso ."
+            ". belgrano ."
+            ". caballito .";
+
+    }
+
 }

@@ -51,20 +51,15 @@
 
 
 .text{
-    width: 100%;
-    height: 40%;
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-start;
-    align-items: flex-start;
-    background-color: #ccbbcf;
+    @extend %text;
+
 }
 
 .price{
     color: #4B4453;
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 995px) {
 
 
     
