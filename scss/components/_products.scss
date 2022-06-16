@@ -4,7 +4,8 @@
 .container{
     margin-bottom: 5rem;
 
-    h2{
+    h1, h2{
+        font-size: 40px;
         margin-top: 3rem;
         margin-bottom: 2rem;
         grid-area: products-title;

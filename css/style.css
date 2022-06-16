@@ -229,9 +229,6 @@ nav a {
   .item-4 {
     width: 100%;
   }
-  .text {
-    font-size: xx-small;
-  }
 }
 .locales-container {
   margin-top: 2rem;
@@ -358,7 +355,8 @@ nav a {
 .container {
   margin-bottom: 5rem;
 }
-.container h2 {
+.container h1, .container h2 {
+  font-size: 40px;
   margin-top: 3rem;
   margin-bottom: 2rem;
   grid-area: products-title;
