@@ -1,6 +1,7 @@
 @import "../base/colors";
 
 footer {
+    width: 100%;
     background-color: $color-nav;
     display: flex;
     justify-content: space-between;
@@ -61,12 +62,39 @@ footer {
 
 @media screen and (max-width: 768px) {
 
+    .fb{
+display: flex;
+justify-content: center;
+align-items: center;
+     width: 15vw;
+    }
+    .tw{
+display: flex;
+justify-content: center;
+align-items: center;
+     width: 15vw;
+    }
+    .ig{
+display: flex;
+justify-content: center;
+align-items: center;
+     width: 15vw;
+    }
+    .wpp{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      width: 15vw;
+    }
+
     footer nav{
         display: none;
     
     }
     
-    
+    footer{
+        width: 100%;
+    }
     
     .footer-social{
         width: 100%;
@@ -84,8 +112,8 @@ footer {
         justify-content: center;
         display: grid;
         grid-template-areas:  
-        "footer-email footer-email footer-email footer-email"
-        "location location location location";
+        "footer-email footer-email "
+        "location location ";
     }
     
     .footer-responsive{

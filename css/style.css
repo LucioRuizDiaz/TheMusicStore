@@ -6,7 +6,7 @@
   font-family: oswald-regular;
   src: url(../../fonts/Oswald/static/Oswald-Regular.ttf);
 }
-.item-4, .item-3, .item-2, .item-1 {
+.item-4, .item-3, .item-2, .item-1, .sales-item-4, .sales-item-3, .sales-item-2, .sales-item-1 {
   background-color: #FBEAFF;
   flex-direction: column;
   justify-content: center;
@@ -17,8 +17,13 @@
   border: #B0A8B9 solid 3px;
   border-radius: 10px;
 }
+@media screen and (min-width: 1200px) {
+  .item-4, .item-3, .item-2, .item-1, .sales-item-4, .sales-item-3, .sales-item-2, .sales-item-1 {
+    height: 400px;
+  }
+}
 
-.img-4, .img-3, .img-2, .img-1 {
+.img-4, .img-3, .img-2, .img-1, .sales-img-4, .sales-img-3, .sales-img-2, .sales-img-1 {
   width: 100%;
   height: 60%;
 }
@@ -125,11 +130,28 @@ nav a {
 
 @media screen and (max-width: 768px) {
   .categorias {
-    margin-left: 2rem;
-    width: 90%;
+    margin-left: none;
     display: grid;
     gap: 1.5rem;
-    grid-template-areas: "categorias-title" "categorias-grid-1" "categorias-grid-2" "categorias-grid-3" "categorias-grid-4";
+    grid-template-areas: ". categorias-title ." ". categorias-grid-1 ." ". categorias-grid-2 ." ". categorias-grid-3 ." ". categorias-grid-4 .";
+  }
+  .categorias-1 {
+    height: 60vh !important;
+  }
+  .categorias-2 {
+    height: 60vh !important;
+  }
+  .categorias-3 {
+    height: 60vh !important;
+  }
+  .categorias-4 {
+    height: 60vh !important;
+  }
+  .img-categorias {
+    height: 40vh !important;
+  }
+  .categorias-text {
+    height: 20vh;
   }
 }
 .categorias-1 {
@@ -180,19 +202,19 @@ nav a {
   grid-area: products-title;
 }
 
-.item-1 {
+.sales-item-1 {
   grid-area: item-1;
 }
 
-.item-2 {
+.sales-item-2 {
   grid-area: item-2;
 }
 
-.item-3 {
+.sales-item-3 {
   grid-area: item-3;
 }
 
-.item-4 {
+.sales-item-4 {
   grid-area: item-4;
 }
 
@@ -215,22 +237,23 @@ nav a {
 @media screen and (max-width: 995px) {
   .images {
     display: grid;
-    grid-template-areas: "item-1 item-2" "item-3 item-4";
+    grid-template-areas: "item-1 . item-2" "item-3 . item-4";
   }
-  .item-1 {
-    width: 100%;
+  .sales-item-1 {
+    width: 50vw;
   }
-  .item-2 {
-    width: 100%;
+  .sales-item-2 {
+    width: 50vw;
   }
-  .item-3 {
-    width: 100%;
+  .sales-item-3 {
+    width: 50vw;
   }
-  .item-4 {
-    width: 100%;
+  .sales-item-4 {
+    width: 50vw;
   }
 }
 .locales-container {
+  width: 100%;
   margin-top: 2rem;
   margin-bottom: 2rem;
   padding-top: 1rem;
@@ -251,7 +274,7 @@ nav a {
 }
 
 .img-locales {
-  width: 60vh;
+  width: 30vw;
   height: 50vh;
   border-radius: 5px;
 }
@@ -292,12 +315,13 @@ nav a {
   grid-area: caballito;
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 1000px) {
   .locales-container {
     grid-template-areas: ". locales-header ." ". congreso ." ". belgrano ." ". caballito .";
   }
   .img-locales {
-    width: 100%;
+    width: 90vw !important;
+    height: 50vh !important;
   }
 }
 .marcas {
@@ -406,7 +430,6 @@ nav a {
   }
 }
 .locales {
-  background-color: #FBEAFF;
   width: 100%;
   margin-top: 2rem;
   margin-bottom: 2rem;
@@ -455,6 +478,7 @@ nav a {
 }
 
 .locales-2-text {
+  height: 60vh;
   background-color: #4B4453;
   display: flex;
   justify-content: center;
@@ -469,7 +493,7 @@ nav a {
 
 .img-locales-2 {
   width: 100%;
-  height: 100%;
+  height: 60vh;
 }
 
 h1 {
@@ -482,6 +506,25 @@ h1 {
   margin-bottom: 2rem;
 }
 
+@media screen and (max-width: 768px) {
+  .img-locales-2 {
+    display: none;
+  }
+  .locales-2-text {
+    height: 40vh;
+    font-size: 0.8rem;
+    padding-bottom: none;
+  }
+  h2 {
+    font-size: 1.5rem;
+    padding-bottom: none;
+    margin-top: 10vh;
+  }
+  .locales-grid {
+    display: grid;
+    grid-template-areas: "congreso-text congreso-text" "belgrano-text belgrano-text " "caballito-text caballito-text";
+  }
+}
 .container-contacto {
   margin-top: 5vh;
   margin-bottom: 5vh;
@@ -534,6 +577,7 @@ textarea {
 }
 
 footer {
+  width: 100%;
   background-color: #845EC2;
   display: flex;
   justify-content: space-between;
@@ -597,8 +641,35 @@ footer section {
 }
 
 @media screen and (max-width: 768px) {
+  .fb {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 15vw;
+  }
+  .tw {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 15vw;
+  }
+  .ig {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 15vw;
+  }
+  .wpp {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 15vw;
+  }
   footer nav {
     display: none;
+  }
+  footer {
+    width: 100%;
   }
   .footer-social {
     width: 100%;
@@ -613,7 +684,7 @@ footer section {
     display: flex;
     justify-content: center;
     display: grid;
-    grid-template-areas: "footer-email footer-email footer-email footer-email" "location location location location";
+    grid-template-areas: "footer-email footer-email " "location location ";
   }
   .footer-responsive {
     width: 100%;

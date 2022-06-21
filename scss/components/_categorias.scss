@@ -1,4 +1,4 @@
-.presentation{
+.presentation {
     width: 100%;
 }
 
@@ -10,10 +10,10 @@
 
     display: grid;
     gap: 1.5rem;
-    grid-template-areas: 
-    " categorias-title categorias-title "
-    " categorias-grid-1  categorias-grid-2 "
-    " categorias-grid-3  categorias-grid-4 ";
+    grid-template-areas:
+        " categorias-title categorias-title "
+        " categorias-grid-1  categorias-grid-2 "
+        " categorias-grid-3  categorias-grid-4 ";
 
 }
 
@@ -21,18 +21,45 @@
 
     .categorias {
 
-        margin-left: 2rem;
-        width: 90%;
+        margin-left: none;
         display: grid;
         gap: 1.5rem;
-        grid-template-areas: 
-        "categorias-title"
-        "categorias-grid-1"  
-        "categorias-grid-2"
-        "categorias-grid-3"  
-        "categorias-grid-4";
+        grid-template-areas:
+            ". categorias-title ."
+            ". categorias-grid-1 ."
+            ". categorias-grid-2 ."
+            ". categorias-grid-3 ."
+            ". categorias-grid-4 .";
 
     }
+
+    .categorias-1 {
+        height: 60vh !important;
+    }
+
+    .categorias-2 {
+        height: 60vh !important;
+
+    }
+
+    .categorias-3 {
+        height: 60vh !important;
+
+    }
+
+    .categorias-4 {
+        height: 60vh !important; 
+
+    }
+
+    .img-categorias {
+        height: 40vh !important;
+    }
+
+    .categorias-text {
+        height: 20vh;
+    }
+
 }
 
 
@@ -43,18 +70,21 @@
 
 
 }
+
 .categorias-2 {
     @extend %categorias;
     grid-area: categorias-grid-2;
 
 
 }
+
 .categorias-3 {
     @extend %categorias;
     grid-area: categorias-grid-3;
 
 
 }
+
 .categorias-4 {
     @extend %categorias;
     grid-area: categorias-grid-4;
@@ -64,7 +94,7 @@
 
 
 
-.categorias-text{
+.categorias-text {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -74,7 +104,8 @@
     border-radius: 0 0 10px 10px;
 
 }
-.img-categorias{
+
+.img-categorias {
     width: 100%;
     height: 55vh;
 }

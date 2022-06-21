@@ -9,6 +9,16 @@
     height: 60vh;
     border: $border-products solid 3px;
     border-radius: 10px;
+
+
+    @media screen and  (min-width: 1200px) {
+        height: 400px;
+
+
+    
+    }   
+
+
 }
 
 %products{

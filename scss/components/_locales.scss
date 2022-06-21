@@ -1,4 +1,5 @@
 .locales-container {
+    width: 100%;
     margin-top: 2rem;
     margin-bottom: 2rem;
     padding-top: 1rem;
@@ -24,7 +25,7 @@
 }
 
 .img-locales {
-    width: 60vh;
+    width: 30vw;
     height: 50vh;
     border-radius: 5px;
 }
@@ -42,7 +43,7 @@
     @include locales(caballito)
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 1000px) {
 
     .locales-container {
 
@@ -53,8 +54,9 @@
             ". caballito .";
 
     }
-    .img-locales {
-        width: 100%;
 
+    .img-locales {
+        width: 90vw !important;
+        height: 50vh !important;
     }
 }

@@ -2,7 +2,7 @@
 
 
 .locales {
-    background-color: $bg-products;
+    
     width: 100%;
     margin-top: 2rem;
     margin-bottom: 2rem;
@@ -52,6 +52,7 @@
 }
 
 .locales-2-text{
+    height: 60vh;
     background-color: #4B4453;
     display: flex;
     justify-content: center;
@@ -67,7 +68,7 @@
 
 .img-locales-2 {
     width: 100%;
-    height: 100%;
+    height: 60vh;
 }
 
 h1 {
@@ -81,4 +82,26 @@ h1 {
 
 }
 
+@media screen and (max-width: 768px) {
 
+    .img-locales-2 {
+display: none;    }
+    .locales-2-text{
+        height: 40vh;
+        font-size: 0.8rem;
+        padding-bottom: none;
+    }
+    h2{
+        
+        font-size: 1.5rem;
+        padding-bottom: none;
+        margin-top: 10vh;
+    }
+    .locales-grid{
+        display: grid;
+        grid-template-areas: 
+        "congreso-text congreso-text"
+        "belgrano-text belgrano-text "
+        "caballito-text caballito-text";
+    }
+}
