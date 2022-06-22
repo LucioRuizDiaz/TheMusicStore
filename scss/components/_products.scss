@@ -71,17 +71,17 @@
         "item-3 item-4";
     }
 
-    .item-1{
-        width: 100%;
+    .item-1, .item-2, .item-3, .item-4{
+        width: 45vw;
+        height: 50vh;
     }
-    .item-2{
-        width: 100%;
+
+    .img-1, .img-2, .img-3, .img-4{
+        height: 45vh;
     }
-    .item-3{
-        width: 100%;
-    }
-    .item-4{
-        width: 100%;
+
+    .text{
+        height: 25vh;
     }
     
 }

@@ -6,7 +6,7 @@ footer {
     display: flex;
     justify-content: space-between;
 
-    section{
+    section {
         display: flex;
         align-items: center;
         list-style: none;
@@ -16,11 +16,11 @@ footer {
     }
 }
 
-.img-footer{
+.img-footer {
     width: 20px;
 }
 
-.footer-social{
+.footer-social {
     list-style: none;
     display: flex;
     flex-direction: column;
@@ -28,96 +28,109 @@ footer {
     grid-area: social;
 }
 
-.footer-info{
+.footer-info {
     display: flex;
     flex-direction: column;
     align-items: flex-end;
     grid-area: info;
 }
 
-.footer-nav{
+.footer-nav {
     list-style-type: none;
     margin: none;
     padding: none;
 }
 
-.fb{
+.fb {
     grid-area: facebook;
 }
-.tw{
+
+.tw {
     grid-area: twitter;
 }
-.ig{
+
+.ig {
     grid-area: instagram;
 }
-.wpp{
+
+.wpp {
     grid-area: whatsapp;
 }
-.footer-email{
+
+.footer-email {
     grid-area: footer-email;
 }
-.footer-loc{
+
+.footer-loc {
     grid-area: location;
-}       
+}
 
 @media screen and (max-width: 768px) {
 
-    .fb{
-display: flex;
-justify-content: center;
-align-items: center;
-     width: 15vw;
-    }
-    .tw{
-display: flex;
-justify-content: center;
-align-items: center;
-     width: 15vw;
-    }
-    .ig{
-display: flex;
-justify-content: center;
-align-items: center;
-     width: 15vw;
-    }
-    .wpp{
+    .fb {
         display: flex;
         justify-content: center;
         align-items: center;
-      width: 15vw;
+        width: 15vw;
+
+        
     }
 
-    footer nav{
-        display: none;
-    
+    .tw {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 15vw;
+        
     }
-    
-    footer{
+
+    .ig {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 15vw;
+        
+    }
+
+    .wpp {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 15vw;
+        
+    }
+
+    footer nav {
+        display: none;
+
+    }
+
+    footer {
         width: 100%;
     }
-    
-    .footer-social{
+
+    .footer-social {
         width: 100%;
         display: flex;
         justify-content: center;
         display: grid;
         gap: 1.5rem;
-        grid-template-areas: 
-        "facebook instagram twitter whatsapp";
+        grid-template-areas:
+            "facebook instagram twitter whatsapp";
     }
-    
-    .footer-info{
+
+    .footer-info {
         width: 100%;
         display: flex;
         justify-content: center;
         display: grid;
-        grid-template-areas:  
-        "footer-email footer-email "
-        "location location ";
+        grid-template-areas:
+            "footer-email footer-email "
+            "location location ";
     }
-    
-    .footer-responsive{
+
+    .footer-responsive {
         width: 100%;
-    
+
     }
 }

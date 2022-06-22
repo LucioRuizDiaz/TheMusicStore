@@ -17,15 +17,10 @@
   border: #B0A8B9 solid 3px;
   border-radius: 10px;
 }
-@media screen and (min-width: 1200px) {
-  .item-4, .item-3, .item-2, .item-1, .sales-item-4, .sales-item-3, .sales-item-2, .sales-item-1 {
-    height: 400px;
-  }
-}
 
 .img-4, .img-3, .img-2, .img-1, .sales-img-4, .sales-img-3, .sales-img-2, .sales-img-1 {
   width: 100%;
-  height: 60%;
+  height: 55vh;
 }
 
 .categorias-4, .categorias-3, .categorias-2, .categorias-1 {
@@ -416,17 +411,15 @@ nav a {
     display: grid;
     grid-template-areas: "item-1 item-2" "item-3 item-4";
   }
-  .item-1 {
-    width: 100%;
+  .item-1, .item-2, .item-3, .item-4 {
+    width: 45vw;
+    height: 50vh;
   }
-  .item-2 {
-    width: 100%;
+  .img-1, .img-2, .img-3, .img-4 {
+    height: 45vh;
   }
-  .item-3 {
-    width: 100%;
-  }
-  .item-4 {
-    width: 100%;
+  .text {
+    height: 25vh;
   }
 }
 .locales {
@@ -490,6 +483,11 @@ nav a {
   font-size: 2rem;
   padding-bottom: 10vh;
 }
+.locales-2-text a {
+  font-size: 2rem;
+  font-family: merriweather-header;
+  font-weight: 300;
+}
 
 .img-locales-2 {
   width: 100%;
@@ -507,22 +505,29 @@ h1 {
 }
 
 @media screen and (max-width: 768px) {
-  .img-locales-2 {
+  .img-locales-2, .congreso-grid-2, .belgrano-grid-2, .caballito-grid-2 {
     display: none;
   }
   .locales-2-text {
     height: 40vh;
     font-size: 0.8rem;
     padding-bottom: none;
+    width: 100%;
+    border-radius: 10px;
   }
   h2 {
     font-size: 1.5rem;
     padding-bottom: none;
     margin-top: 10vh;
   }
+  .link-locales {
+    font-size: 1.5rem;
+    padding-bottom: none;
+  }
   .locales-grid {
+    width: 100%;
     display: grid;
-    grid-template-areas: "congreso-text congreso-text" "belgrano-text belgrano-text " "caballito-text caballito-text";
+    grid-template-areas: ". congreso-text  ." ". belgrano-text  ." ". caballito-text  .";
   }
 }
 .container-contacto {
