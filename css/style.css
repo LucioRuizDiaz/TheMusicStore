@@ -6,7 +6,7 @@
   font-family: oswald-regular;
   src: url(../../fonts/Oswald/static/Oswald-Regular.ttf);
 }
-.item-4, .item-3, .item-2, .item-1, .sales-item-4, .sales-item-3, .sales-item-2, .sales-item-1 {
+.item-4, .item-3, .item-2, .item-1 {
   background-color: #FBEAFF;
   flex-direction: column;
   justify-content: center;
@@ -18,9 +18,26 @@
   border-radius: 10px;
 }
 
-.img-4, .img-3, .img-2, .img-1, .sales-img-4, .sales-img-3, .sales-img-2, .sales-img-1 {
+.sales-item-4, .sales-item-3, .sales-item-2, .sales-item-1 {
+  background-color: #FBEAFF;
+  flex-direction: column;
+  justify-content: center;
+  display: flex;
+  align-items: center;
+  width: 23%;
+  height: 65vh;
+  border: #B0A8B9 solid 3px;
+  border-radius: 10px;
+}
+
+.img-4, .img-3, .img-2, .img-1 {
   width: 100%;
   height: 55vh;
+}
+
+.sales-img-4, .sales-img-3, .sales-img-2, .sales-img-1 {
+  width: 100%;
+  height: 60vh;
 }
 
 .categorias-4, .categorias-3, .categorias-2, .categorias-1 {
@@ -42,6 +59,17 @@
 .text {
   width: 100%;
   height: 40%;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  background-color: #ccbbcf;
+  border-radius: 0 0 10px 10px;
+}
+
+.text {
+  width: 100%;
+  height: 22vh;
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
@@ -234,7 +262,6 @@ nav a {
 .price-2 {
   color: #623892;
   text-decoration: none;
-  font-size: large;
 }
 
 @media screen and (max-width: 995px) {

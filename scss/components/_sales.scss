@@ -10,22 +10,22 @@
     }
 }
 .sales-item-1 {
-    @extend %items;
+    @extend %items-2;
     grid-area: item-1;
 }
 
 .sales-item-2{
-    @extend %items;
+    @extend %items-2;
     grid-area: item-2;
 }
 
 .sales-item-3{
-    @extend %items;
+    @extend %items-2;
     grid-area: item-3;
 }
 
 .sales-item-4{
-    @extend %items;
+    @extend %items-2;
     grid-area: item-4;
 }
 
@@ -35,16 +35,16 @@
 }
 
 .sales-img-1{
-    @extend %products;
+    @extend %products-2;
 }
 .sales-img-2{
-    @extend %products;
+    @extend %products-2;
 }
 .sales-img-3{
-    @extend %products;
+    @extend %products-2;
 }
 .sales-img-4{
-    @extend %products;
+    @extend %products-2;
     
 }
 
@@ -52,7 +52,7 @@
 
 
 .text{
-@extend %text;
+@extend %text-2;
 }
 
 .price-1{
@@ -62,7 +62,6 @@
 
 .price-2{
     @include price(#623892, none);
-    font-size: large;
 }
 
 @media screen and (max-width: 995px) {
