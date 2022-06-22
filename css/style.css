@@ -50,6 +50,14 @@
   border-radius: 0 0 10px 10px;
 }
 
+@font-face {
+  font-family: merriweather-header;
+  src: url(../../fonts/Merriweather/Merriweather-Black.ttf);
+}
+@font-face {
+  font-family: oswald-regular;
+  src: url(../../fonts/Oswald/static/Oswald-Regular.ttf);
+}
 * {
   margin: 0;
   padding: 0;
@@ -421,6 +429,14 @@ nav a {
   .text {
     height: 25vh;
   }
+}
+@font-face {
+  font-family: merriweather-header;
+  src: url(../../fonts/Merriweather/Merriweather-Black.ttf);
+}
+@font-face {
+  font-family: oswald-regular;
+  src: url(../../fonts/Oswald/static/Oswald-Regular.ttf);
 }
 .locales {
   width: 100%;
