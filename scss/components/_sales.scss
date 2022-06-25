@@ -1,7 +1,7 @@
-.sales{
+.sales {
     margin-bottom: 10rem;
 
-    h2{
+    h2 {
         font-size: 3rem;
         margin-top: 3rem;
         margin-bottom: 2rem;
@@ -9,84 +9,122 @@
 
     }
 }
+
 .sales-item-1 {
     @extend %items-2;
     grid-area: item-1;
 }
 
-.sales-item-2{
+.sales-item-2 {
     @extend %items-2;
     grid-area: item-2;
 }
 
-.sales-item-3{
+.sales-item-3 {
     @extend %items-2;
     grid-area: item-3;
 }
 
-.sales-item-4{
+.sales-item-4 {
     @extend %items-2;
     grid-area: item-4;
 }
 
-.images{
+.images {
     display: flex;
     justify-content: center;
 }
 
-.sales-img-1{
+.sales-img-1 {
     @extend %products-2;
 }
-.sales-img-2{
+
+.sales-img-2 {
     @extend %products-2;
 }
-.sales-img-3{
+
+.sales-img-3 {
     @extend %products-2;
 }
-.sales-img-4{
+
+.sales-img-4 {
     @extend %products-2;
-    
+
 }
 
 
 
 
-.text{
-@extend %text-2;
+.text-sales {
+    @extend %text-2;
 }
 
-.price-1{
+.price-1 {
     @include price(#4B4453, line-through);
 
 }
 
-.price-2{
+.price-2 {
     @include price(#623892, none);
 }
 
 @media screen and (max-width: 995px) {
 
 
-    
-    .images{
+
+    .images {
         display: grid;
-        grid-template-areas: 
-        "item-1 . item-2"
-        "item-3 . item-4";
+        gap: .5vh;
+        grid-template-areas:
+            "item-1 . item-2"
+            "item-3 . item-4";
     }
 
-    .sales-item-1{
-        width: 50vw;
+    .sales-item-1 {
+        width: 45vw;
+        height: 50vh;
     }
-    .sales-item-2{
-        width: 50vw;
+
+    .sales-item-2 {
+        width: 45vw;
+        height: 50vh;
+
     }
-    .sales-item-3{
-        width: 50vw;
+
+    .sales-item-3 {
+        width: 45vw;
+        height: 50vh;
+
     }
-    .sales-item-4{
-        width: 50vw;
+
+    .sales-item-4 {
+        width: 45vw;
+        height: 50vh;
+
+    }
+
+    .sales-img-1 {
+        height: 40vh;
     }
     
+    .sales-img-2 {
+        height: 40vh;
+    }
+    
+    .sales-img-3 {
+        height: 40vh;
+    }
+    
+    .sales-img-4 {
+        height: 40vh;
+    
+    }
+
+    .text-sales{
+        height: 15vh;
+        p{
+            margin-bottom: 0;
+        }
+    }
 
 }

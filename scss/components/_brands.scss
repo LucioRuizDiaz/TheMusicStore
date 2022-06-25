@@ -1,7 +1,5 @@
 .marcas {
-    display: flex;
-    justify-content: center;
-    align-items: center;
+
     width: 100%;
     margin-top: 10rem;
     padding-top: 1rem;
@@ -53,5 +51,14 @@
     justify-content: center;
     font-size: 1.5rem;
     grid-area: marcas-text;
+
+}
+
+@media screen and (max-width: 995px) {
+   
+   .marcas{
+    margin-top: none !important;
+    padding-top: none !important;
+   }
 
 }
