@@ -14,10 +14,10 @@ body {
 
 
 a {
+    font-family: $inter;
+    font-weight: 700;
     list-style-type: none;
     text-decoration: none;
-    font-family: sans-serif;
-    font-weight: 600;
     color: black;
     font-size: medium;
 
@@ -25,20 +25,26 @@ a {
         color: $bg-body;
     }
 }
-
+h1{
+    font-family: $merriweather;
+    font-weight: 700;
+    display: flex;
+    justify-content: center;
+}
 h2 {
-    font-family: merriweather-header;
+    font-family: $merriweather;
+    font-weight: 700;
     display: flex;
     justify-content: center;
 }
 
 h4{
-    font-family: oswald-regular;
+    font-family: $inter;
     font-size: 1.2rem;
 }
 
 p {
-    font-family: oswald-regular;
+    font-family: $inter;
 }
 
 

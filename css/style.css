@@ -1,11 +1,3 @@
-@font-face {
-  font-family: merriweather-header;
-  src: url(../../fonts/Merriweather/Merriweather-Black.ttf);
-}
-@font-face {
-  font-family: oswald-regular;
-  src: url(../../fonts/Oswald/static/Oswald-Regular.ttf);
-}
 .item-4, .item-3, .item-2, .item-1 {
   background-color: #FBEAFF;
   flex-direction: column;
@@ -69,7 +61,7 @@
 
 .text-sales {
   width: 100%;
-  height: 22vh;
+  height: 40%;
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
@@ -78,14 +70,6 @@
   border-radius: 0 0 10px 10px;
 }
 
-@font-face {
-  font-family: merriweather-header;
-  src: url(../../fonts/Merriweather/Merriweather-Black.ttf);
-}
-@font-face {
-  font-family: oswald-regular;
-  src: url(../../fonts/Oswald/static/Oswald-Regular.ttf);
-}
 * {
   margin: 0;
   padding: 0;
@@ -97,10 +81,10 @@ body {
 }
 
 a {
+  font-family: "Inter", sans-serif;
+  font-weight: 700;
   list-style-type: none;
   text-decoration: none;
-  font-family: sans-serif;
-  font-weight: 600;
   color: black;
   font-size: medium;
 }
@@ -108,19 +92,27 @@ a:hover {
   color: #B4A7B7;
 }
 
+h1 {
+  font-family: "Merriweather", serif;
+  font-weight: 700;
+  display: flex;
+  justify-content: center;
+}
+
 h2 {
-  font-family: merriweather-header;
+  font-family: "Merriweather", serif;
+  font-weight: 700;
   display: flex;
   justify-content: center;
 }
 
 h4 {
-  font-family: oswald-regular;
+  font-family: "Inter", sans-serif;
   font-size: 1.2rem;
 }
 
 p {
-  font-family: oswald-regular;
+  font-family: "Inter", sans-serif;
 }
 
 header {
@@ -483,14 +475,6 @@ nav a {
     height: 25vh;
   }
 }
-@font-face {
-  font-family: merriweather-header;
-  src: url(../../fonts/Merriweather/Merriweather-Black.ttf);
-}
-@font-face {
-  font-family: oswald-regular;
-  src: url(../../fonts/Oswald/static/Oswald-Regular.ttf);
-}
 .locales {
   width: 100%;
   margin-top: 2rem;
@@ -568,7 +552,6 @@ h1 {
   justify-content: center;
   width: 100%;
   font-size: 3rem;
-  font-family: merriweather-header;
   margin-top: 2rem;
   margin-bottom: 2rem;
 }
