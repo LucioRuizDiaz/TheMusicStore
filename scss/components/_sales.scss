@@ -11,39 +11,31 @@
 }
 
 .sales-item-1 {
+    @include animation(1.1);
     @extend %items-2;
     grid-area: item-1;
-    transition: all .5s ease-in-out;
-    &:hover {
-        transform: scale(1.1);
-    }
+
 }
 
 .sales-item-2 {
+    @include animation(1.1);
     @extend %items-2;
     grid-area: item-2;
-    transition: all .5s ease-in-out;
-    &:hover {
-        transform: scale(1.1);
-    }
+
 }
 
 .sales-item-3 {
+    @include animation(1.1);
     @extend %items-2;
     grid-area: item-3;
-    transition: all .5s ease-in-out;
-    &:hover {
-        transform: scale(1.1);
-    }
+
 }
 
 .sales-item-4 {
     @extend %items-2;
     grid-area: item-4;
     transition: all .5s ease-in-out;
-    &:hover {
-        transform: scale(1.1);
-    }
+
 }
 
 .images {

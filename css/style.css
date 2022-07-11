@@ -88,8 +88,7 @@ a {
   color: black;
   font-size: medium;
 }
-
-nav a:hover {
+a:hover {
   color: #B4A7B7;
 }
 
@@ -180,7 +179,7 @@ nav a {
 }
 .categorias-1 {
   grid-area: categorias-grid-1;
-  transition: all 0.2s ease-in-out;
+  transition: all 0.5s ease-in-out;
 }
 .categorias-1:hover {
   transform: scale(1.01);
@@ -188,7 +187,7 @@ nav a {
 
 .categorias-2 {
   grid-area: categorias-grid-2;
-  transition: all 0.2s ease-in-out;
+  transition: all 0.5s ease-in-out;
 }
 .categorias-2:hover {
   transform: scale(1.01);
@@ -196,7 +195,7 @@ nav a {
 
 .categorias-3 {
   grid-area: categorias-grid-3;
-  transition: all 0.2s ease-in-out;
+  transition: all 0.5s ease-in-out;
 }
 .categorias-3:hover {
   transform: scale(1.01);
@@ -204,7 +203,7 @@ nav a {
 
 .categorias-4 {
   grid-area: categorias-grid-4;
-  transition: all 0.2s ease-in-out;
+  transition: all 0.5s ease-in-out;
 }
 .categorias-4:hover {
   transform: scale(1.01);
@@ -243,24 +242,24 @@ nav a {
 }
 
 .sales-item-1 {
-  grid-area: item-1;
   transition: all 0.5s ease-in-out;
+  grid-area: item-1;
 }
 .sales-item-1:hover {
   transform: scale(1.1);
 }
 
 .sales-item-2 {
-  grid-area: item-2;
   transition: all 0.5s ease-in-out;
+  grid-area: item-2;
 }
 .sales-item-2:hover {
   transform: scale(1.1);
 }
 
 .sales-item-3 {
-  grid-area: item-3;
   transition: all 0.5s ease-in-out;
+  grid-area: item-3;
 }
 .sales-item-3:hover {
   transform: scale(1.1);
@@ -269,9 +268,6 @@ nav a {
 .sales-item-4 {
   grid-area: item-4;
   transition: all 0.5s ease-in-out;
-}
-.sales-item-4:hover {
-  transform: scale(1.1);
 }
 
 .images {
@@ -473,18 +469,34 @@ nav a {
 
 .item-1 {
   grid-area: item-1;
+  transition: all 0.5s ease-in-out;
+}
+.item-1:hover {
+  transform: scale(1.1);
 }
 
 .item-2 {
   grid-area: item-2;
+  transition: all 0.5s ease-in-out;
+}
+.item-2:hover {
+  transform: scale(1.1);
 }
 
 .item-3 {
   grid-area: item-3;
+  transition: all 0.5s ease-in-out;
+}
+.item-3:hover {
+  transform: scale(1.1);
 }
 
 .item-4 {
   grid-area: item-4;
+  transition: all 0.5s ease-in-out;
+}
+.item-4:hover {
+  transform: scale(1.1);
 }
 
 .images {
