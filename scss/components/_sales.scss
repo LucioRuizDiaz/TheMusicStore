@@ -32,9 +32,9 @@
 }
 
 .sales-item-4 {
+    @include animation(1.1);
     @extend %items-2;
     grid-area: item-4;
-    transition: all .5s ease-in-out;
 
 }
 
