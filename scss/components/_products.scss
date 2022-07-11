@@ -63,7 +63,12 @@
 @media screen and (max-width: 995px) {
 
 
-    
+    h4{
+        font-size: medium;
+    }
+    p{
+        font-size: small;
+    }
     .images{
         display: grid;
         grid-template-areas: 
@@ -77,11 +82,11 @@
     }
 
     .img-1, .img-2, .img-3, .img-4{
-        height: 45vh;
+        height: 30vh;
     }
 
     .text{
-        height: 25vh;
+        height: 20vh;
     }
     
 }

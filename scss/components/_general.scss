@@ -21,6 +21,10 @@ a {
     color: black;
     font-size: medium;
 
+}
+
+nav a{
+
     &:hover{
         color: $bg-body;
     }

@@ -17,7 +17,7 @@
   display: flex;
   align-items: center;
   width: 23%;
-  height: 65vh;
+  height: 6 65vh;
   border: #B0A8B9 solid 3px;
   border-radius: 10px;
 }
@@ -29,7 +29,7 @@
 
 .sales-img-4, .sales-img-3, .sales-img-2, .sales-img-1 {
   width: 100%;
-  height: 60vh;
+  height: 50vh;
 }
 
 .categorias-4, .categorias-3, .categorias-2, .categorias-1 {
@@ -88,7 +88,8 @@ a {
   color: black;
   font-size: medium;
 }
-a:hover {
+
+nav a:hover {
   color: #B4A7B7;
 }
 
@@ -179,18 +180,34 @@ nav a {
 }
 .categorias-1 {
   grid-area: categorias-grid-1;
+  transition: all 0.2s ease-in-out;
+}
+.categorias-1:hover {
+  transform: scale(1.01);
 }
 
 .categorias-2 {
   grid-area: categorias-grid-2;
+  transition: all 0.2s ease-in-out;
+}
+.categorias-2:hover {
+  transform: scale(1.01);
 }
 
 .categorias-3 {
   grid-area: categorias-grid-3;
+  transition: all 0.2s ease-in-out;
+}
+.categorias-3:hover {
+  transform: scale(1.01);
 }
 
 .categorias-4 {
   grid-area: categorias-grid-4;
+  transition: all 0.2s ease-in-out;
+}
+.categorias-4:hover {
+  transform: scale(1.01);
 }
 
 .categorias-text {
@@ -227,18 +244,34 @@ nav a {
 
 .sales-item-1 {
   grid-area: item-1;
+  transition: all 0.5s ease-in-out;
+}
+.sales-item-1:hover {
+  transform: scale(1.1);
 }
 
 .sales-item-2 {
   grid-area: item-2;
+  transition: all 0.5s ease-in-out;
+}
+.sales-item-2:hover {
+  transform: scale(1.1);
 }
 
 .sales-item-3 {
   grid-area: item-3;
+  transition: all 0.5s ease-in-out;
+}
+.sales-item-3:hover {
+  transform: scale(1.1);
 }
 
 .sales-item-4 {
   grid-area: item-4;
+  transition: all 0.5s ease-in-out;
+}
+.sales-item-4:hover {
+  transform: scale(1.1);
 }
 
 .images {
@@ -259,7 +292,7 @@ nav a {
 @media screen and (max-width: 995px) {
   .images {
     display: grid;
-    gap: 0.5vh;
+    row-gap: 5vh;
     grid-template-areas: "item-1 . item-2" "item-3 . item-4";
   }
   .sales-item-1 {
@@ -279,21 +312,25 @@ nav a {
     height: 50vh;
   }
   .sales-img-1 {
-    height: 40vh;
+    height: 30vh;
   }
   .sales-img-2 {
-    height: 40vh;
+    height: 30vh;
   }
   .sales-img-3 {
-    height: 40vh;
+    height: 30vh;
   }
   .sales-img-4 {
-    height: 40vh;
+    height: 30vh;
   }
   .text-sales {
-    height: 15vh;
+    height: 20vh;
+  }
+  .text-sales h4 {
+    font-size: medium;
   }
   .text-sales p {
+    font-size: small;
     margin-bottom: 0;
   }
 }
@@ -460,6 +497,12 @@ nav a {
 }
 
 @media screen and (max-width: 995px) {
+  h4 {
+    font-size: medium;
+  }
+  p {
+    font-size: small;
+  }
   .images {
     display: grid;
     grid-template-areas: "item-1 item-2" "item-3 item-4";
@@ -469,10 +512,10 @@ nav a {
     height: 50vh;
   }
   .img-1, .img-2, .img-3, .img-4 {
-    height: 45vh;
+    height: 30vh;
   }
   .text {
-    height: 25vh;
+    height: 20vh;
   }
 }
 .locales {
@@ -593,7 +636,7 @@ h1 {
 }
 
 .contact-box {
-  max-width: 850px;
+  width: 850px;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -621,7 +664,7 @@ h1 {
 }
 
 textarea {
-  min-height: 150px;
+  height: 150px;
 }
 
 .boton {
@@ -632,7 +675,22 @@ textarea {
   font-size: 1.1rem;
   border: none;
 }
+.boton:hover {
+  background-color: #845EC2;
+}
 
+@media screen and (max-width: 768px) {
+  .contact-box {
+    width: 100%;
+  }
+  .field {
+    width: 80%;
+  }
+  .mensaje {
+    width: 100%;
+    padding-bottom: 25px;
+  }
+}
 footer {
   width: 100%;
   background-color: #845EC2;

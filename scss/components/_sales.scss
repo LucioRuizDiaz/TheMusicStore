@@ -13,21 +13,37 @@
 .sales-item-1 {
     @extend %items-2;
     grid-area: item-1;
+    transition: all .5s ease-in-out;
+    &:hover {
+        transform: scale(1.1);
+    }
 }
 
 .sales-item-2 {
     @extend %items-2;
     grid-area: item-2;
+    transition: all .5s ease-in-out;
+    &:hover {
+        transform: scale(1.1);
+    }
 }
 
 .sales-item-3 {
     @extend %items-2;
     grid-area: item-3;
+    transition: all .5s ease-in-out;
+    &:hover {
+        transform: scale(1.1);
+    }
 }
 
 .sales-item-4 {
     @extend %items-2;
     grid-area: item-4;
+    transition: all .5s ease-in-out;
+    &:hover {
+        transform: scale(1.1);
+    }
 }
 
 .images {
@@ -74,7 +90,7 @@
 
     .images {
         display: grid;
-        gap: .5vh;
+        row-gap: 5vh;
         grid-template-areas:
             "item-1 . item-2"
             "item-3 . item-4";
@@ -104,25 +120,29 @@
     }
 
     .sales-img-1 {
-        height: 40vh;
+        height: 30vh;
     }
     
     .sales-img-2 {
-        height: 40vh;
+        height: 30vh;
     }
     
     .sales-img-3 {
-        height: 40vh;
+        height: 30vh;
     }
     
     .sales-img-4 {
-        height: 40vh;
+        height: 30vh;
     
     }
 
     .text-sales{
-        height: 15vh;
+        height: 20vh;
+        h4{
+            font-size: medium
+        }
         p{
+            font-size: small;
             margin-bottom: 0;
         }
     }

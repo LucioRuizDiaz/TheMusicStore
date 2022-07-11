@@ -67,6 +67,10 @@
 .categorias-1 {
     @extend %categorias;
     grid-area: categorias-grid-1;
+    transition: all .2s ease-in-out;
+    &:hover {
+      transform: scale(1.01);
+    }
 
 
 }
@@ -74,13 +78,20 @@
 .categorias-2 {
     @extend %categorias;
     grid-area: categorias-grid-2;
-
+    transition: all .2s ease-in-out;
+    &:hover {
+      transform: scale(1.01);
+    }
 
 }
 
 .categorias-3 {
     @extend %categorias;
     grid-area: categorias-grid-3;
+    transition: all .2s ease-in-out;
+    &:hover {
+      transform: scale(1.01);
+    }
 
 
 }
@@ -88,6 +99,10 @@
 .categorias-4 {
     @extend %categorias;
     grid-area: categorias-grid-4;
+    transition: all .2s ease-in-out;
+    &:hover {
+      transform: scale(1.01);
+    }
 
 
 }
