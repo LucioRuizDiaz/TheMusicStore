@@ -1,9 +1,9 @@
 <h1 align="center">Hi 👋, I'm Lucio Ruiz Diaz</h1>
 <h3 align="center">A passionate frontend developer from Argentina</h3>
 
-- 🔭 I’m currently working on [JS](https://github.com/LucioRuizDiaz/Proyecto-Js)
+- 🔭 I’m currently working on [Jojilustraciones](https://github.com/LucioRuizDiaz/Jojilustraciones)
 
-- 🌱 I’m currently learning **JS and will be learning React JS in the future.**
+- 🌱 I’m currently learning **React JS.**
 
 - 📫 How to reach me **luciotadeo02@gmail.com**
 
